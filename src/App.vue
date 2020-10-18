@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="navBar" v-show="navBarShow" @click="navBarShow = !navBarShow">
-      <router-link :to="{name:'list-view'}"></router-link>
+      <router-link :to="{name:'list-view'}">list</router-link>
     </div>
     <router-view/>
   </div>
@@ -26,4 +26,12 @@ export default {
 
 <style lang="scss">
   @import "./common/scss/index.scss";
+  .navBar {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background:hotpink;
+    color: #fff;
+    font-size: 20px;
+  }
 </style>
