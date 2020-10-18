@@ -2,10 +2,10 @@
   <div class="box">
     <div class="list-view" ref="listView">
       <ul>
-        <li v-for="(group,index) in singers" class="list-group" :key="group.id" ref="listGroup">
+        <li v-for="group in singers" class="list-group" :key="group.id" ref="listGroup">
           <h2 class="list-group-title">{{group.title}}</h2>
           <ul>
-            <li v-for="(item,index) in group.items" class="list-group-item" :key="item.id">
+            <li v-for="item in group.items" class="list-group-item" :key="item.id">
               <img v-lazy="item.avatar" class="avatar">
               <span class="name">{{item.name}}</span>
             </li>
